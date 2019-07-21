@@ -72,7 +72,6 @@ namespace Graph
                 
         }
 
-
         public void DFS(int startNode)
         {
             var nodeLen = new List<int>();
@@ -106,7 +105,6 @@ namespace Graph
         {
             return vertices.FindIndex(x => x == obj);
         }
-
 
         public void PrintAdjacencyList()
         {

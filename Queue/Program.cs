@@ -9,5 +9,4 @@ namespace Queue
             Console.WriteLine("Hello World!");
         }
     }
-
 }
