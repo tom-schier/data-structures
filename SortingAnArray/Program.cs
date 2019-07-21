@@ -9,6 +9,7 @@ namespace SortingAnArray
         public const string DataToProcess = "0,1,2,0,0,1,1,2,1,0,2,2,2,2,1,2,0,1,1,2,2";
         static void Main(string[] args)
         {
+            Console.WriteLine("INSERTION SORT");
             Console.WriteLine("Rading data into List..." + DataToProcess);
             var intArray = DataToProcess.Split(',').Select(x => int.Parse(x.Trim())).ToArray();
             for (int i = 0; i < intArray.Count(); i++)

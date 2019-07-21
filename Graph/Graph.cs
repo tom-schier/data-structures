@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Graph
@@ -56,7 +57,7 @@ namespace Graph
                     continue;
                 visitedList.Add(current);
                 Console.WriteLine("BFS: Visited " + current);
-                var currentConnected = adjacencyList[current];
+                List<int> currentConnected = adjacencyList[current];
 
                 foreach(var col in currentConnected)
                 {                  
@@ -127,15 +128,4 @@ namespace Graph
 
     }
 
-    //public class Vertex
-    //{
-    //    public int Val;
-    //    public List<int> Edges;
-    //    public bool Visited = false;
-
-    //    public Vertex()
-    //    {
-    //        Edges = new List<int>();
-    //    }
-    //}
 }

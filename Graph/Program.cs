@@ -15,7 +15,7 @@ namespace Graph
             network.PrintAdjacencyList();
             network.BFS(0);
 
-            network.DFS(3);
+            network.DFS(0);
             // network1 = new PeopleNetwork();
             // ReadData(network1);
             //  network1.PrintAdjacencyList();
