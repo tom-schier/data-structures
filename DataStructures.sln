@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Queue\Queue.csproj", "{013EE7B3-4926-4D9C-AA92-98BA0E75F78B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSort", "SortingAnArray\InsertionSort.csproj", "{A1AD9C8F-DC19-42C1-88E5-3FE2F8577AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSortProgram", "SortingAnArray\InsertionSortProgram.csproj", "{A1AD9C8F-DC19-42C1-88E5-3FE2F8577AD1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSort", "MergeSort\MergeSort.csproj", "{0E385DE0-78BB-4321-ACC0-DC4720C61770}"
 EndProject
