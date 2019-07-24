@@ -3,13 +3,13 @@ using System.Diagnostics;
 using System.Linq;
 using UtitlityStuff;
 
-namespace BubbleSort
+namespace SelectionSort
 {
-    class BubbleSortProgram
+    class SelectionSortProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BUBBLE SORT");
+            Console.WriteLine("SELECTION SORT");
             int[] arr;
             Utility.InitializeArray(out arr);
 
@@ -22,7 +22,7 @@ namespace BubbleSort
             stopWatch.Start();
             //call the sorting algorithm
             Console.WriteLine("Calling the sorting algorithm....");
-            BubbleSort(arr);
+            SelectionSort(arr);
             Console.WriteLine("Sorting completed.");
             stopWatch.Stop();
 
@@ -38,20 +38,22 @@ namespace BubbleSort
         }
 
 
-        /************** the actual algorithm **************************/
-        private static void BubbleSort(int[] arr)
+        private static void SelectionSort(int[] arr)
         {
-            for (int i = 0; i < arr.Length - 1; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int j = arr.Length - 1; j > i; j--)
+                var tmp = arr[i];
+                for (int j = i + 1; j < arr.Length; j++)
                 {
-                    if (arr[j] < arr[j - 1])
+                    if (arr[j] < arr[i])
                     {
-                        Utility.Swap(ref arr[j], ref arr[j - 1]);
+                        arr[i] = arr[j];
+                        arr[j] = tmp;
                     }
                 }
             }
         }
-    }
 
+
+    }
 }

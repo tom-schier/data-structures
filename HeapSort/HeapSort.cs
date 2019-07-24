@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Linq;
 using UtitlityStuff;
 
-namespace BubbleSort
+namespace HeapSort
 {
-    class BubbleSortProgram
+    class HeapSortProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BUBBLE SORT");
+            Console.WriteLine("HEAP SORT");
             int[] arr;
             Utility.InitializeArray(out arr);
 
@@ -22,7 +21,7 @@ namespace BubbleSort
             stopWatch.Start();
             //call the sorting algorithm
             Console.WriteLine("Calling the sorting algorithm....");
-            BubbleSort(arr);
+            HeapSort(arr);
             Console.WriteLine("Sorting completed.");
             stopWatch.Stop();
 
@@ -37,21 +36,10 @@ namespace BubbleSort
             Console.ReadKey();
         }
 
-
-        /************** the actual algorithm **************************/
-        private static void BubbleSort(int[] arr)
+        private static void HeapSort(int[] arr)
         {
-            for (int i = 0; i < arr.Length - 1; i++)
-            {
-                for (int j = arr.Length - 1; j > i; j--)
-                {
-                    if (arr[j] < arr[j - 1])
-                    {
-                        Utility.Swap(ref arr[j], ref arr[j - 1]);
-                    }
-                }
-            }
+            Console.Write("Not implemented yet ....");
         }
     }
-
 }
+

@@ -8,11 +8,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Queue\Queue.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSortProgram", "SortingAnArray\InsertionSortProgram.csproj", "{A1AD9C8F-DC19-42C1-88E5-3FE2F8577AD1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSort", "MergeSort\MergeSort.csproj", "{0E385DE0-78BB-4321-ACC0-DC4720C61770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSortProgram", "MergeSort\MergeSortProgram.csproj", "{0E385DE0-78BB-4321-ACC0-DC4720C61770}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{8CCC6387-700B-4779-A38B-EB74EB938C56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionSortProgram", "SelectionSort\SelectionSortProgram.csproj", "{8CCC6387-700B-4779-A38B-EB74EB938C56}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeapSort", "HeapSort\HeapSort.csproj", "{3849CA7A-0C9D-4FBC-BA9E-9C70D7A108AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeapSortProgram", "HeapSort\HeapSortProgram.csproj", "{3849CA7A-0C9D-4FBC-BA9E-9C70D7A108AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structures", "Structures", "{ECA0B2E2-EE0D-4661-B670-F34DC6035BF4}"
 EndProject
@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{B24D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graph", "Graph\Graph.csproj", "{E5E66CC4-70C7-4223-A376-C52E4689CA75}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\QuickSort.csproj", "{F0DF8DE7-312A-47F8-80FD-EC088EDC694C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSortProgram", "QuickSort\QuickSortProgram.csproj", "{F0DF8DE7-312A-47F8-80FD-EC088EDC694C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSortProgram", "BubbleSort\BubbleSortProgram.csproj", "{7D1BFBD7-66EC-4039-9B82-2529415D3577}"
 EndProject

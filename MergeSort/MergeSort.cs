@@ -1,21 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
+using UtitlityStuff;
 
 namespace MergeSort
 {
-    class Program
+    class MergSortProgram
     {
         static void Main(string[] args)
         {
-            int[] arr = {
-                    1, 5, 4, 11, 20, 8, 2, 98, 90, 16
-                };
+            Console.WriteLine("MERGE SORT");
+            int[] arr;
+            Utility.InitializeArray(out arr);
 
+            //This can be enabled for degugging purposes
+            //Console.WriteLine("Input array:");
+            //Console.WriteLine();
+            //WriteArrayToConsole(arr);
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            //call the sorting algorithm
+            Console.WriteLine("Calling the sorting algorithm....");
             MergeSort(arr, 0, arr.Length - 1);
-            Console.WriteLine("Merge Sort");
-            for (int i = 0; i < arr.Length; i++)
-                Console.WriteLine(arr[i]);
+            Console.WriteLine("Sorting completed.");
+            stopWatch.Stop();
+
+            //This can be enabled for degugging purposes
+            //Console.WriteLine("Sorted Values:");
+            //Console.WriteLine();
+            //WriteArrayToConsole(arr);
+
+            Utility.WritePerformance(stopWatch.Elapsed, stopWatch.ElapsedTicks);
+
+            Console.Write("Enter any key to close ....");
+            Console.ReadKey();
         }  
 
 

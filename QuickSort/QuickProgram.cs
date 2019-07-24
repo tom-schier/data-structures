@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Linq;
 using UtitlityStuff;
 
-namespace BubbleSort
+namespace QuickSort
 {
-    class BubbleSortProgram
+    class QuickProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BUBBLE SORT");
+            Console.WriteLine("QUICK SORT");
             int[] arr;
             Utility.InitializeArray(out arr);
 
@@ -22,7 +21,7 @@ namespace BubbleSort
             stopWatch.Start();
             //call the sorting algorithm
             Console.WriteLine("Calling the sorting algorithm....");
-            BubbleSort(arr);
+            QuickSort(arr, 0, arr.Length-1);
             Console.WriteLine("Sorting completed.");
             stopWatch.Stop();
 
@@ -37,21 +36,40 @@ namespace BubbleSort
             Console.ReadKey();
         }
 
-
-        /************** the actual algorithm **************************/
-        private static void BubbleSort(int[] arr)
+        private static void QuickSort(int[] arr, int start, int end)
         {
-            for (int i = 0; i < arr.Length - 1; i++)
+            int i;
+            if (start < end)
             {
-                for (int j = arr.Length - 1; j > i; j--)
-                {
-                    if (arr[j] < arr[j - 1])
-                    {
-                        Utility.Swap(ref arr[j], ref arr[j - 1]);
-                    }
-                }
+                i = Partition(arr, start, end);
+
+                QuickSort(arr, start, i - 1);
+                QuickSort(arr, i + 1, end);
             }
         }
-    }
 
+        private static int Partition(int[] arr, int start, int end)
+        {
+            int temp;
+            int p = arr[end];
+            int i = start - 1;
+
+            for (int j = start; j <= end - 1; j++)
+            {
+                if (arr[j] <= p)
+                {
+                    i++;
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+
+            temp = arr[i + 1];
+            arr[i + 1] = arr[end];
+            arr[end] = temp;
+            return i + 1;
+        }
+
+    }
 }
